@@ -43,12 +43,12 @@ This course introduces Google Cloud's AI and machine learning (ML) capabilities,
     - Custom training
 - [Lab] Entity and Sentiment Analysis with the Natural Language API
 - [Reading](https://partner.skills.google/paths/84/course_templates/593/documents/636924) AI development options
-    - Natural Language API basics
-    - AI APIs for Google Cloud
-    - Introduction to Vertex AI
-    - AutoML: beginner's guide
-    - Custom training: beginner's guide
-    - Tf.keras documentation
+    - Natural Language API basics](https://docs.cloud.google.com/natural-language/docs/basics)
+    - [AI APIs for Google Cloud](https://cloud.google.com/ai/apis?hl=en)
+    - [Introduction to Vertex AI](https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning)
+    - [AutoML: beginner's guide](https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/beginner/beginners-guide)
+    - [Custom training: beginner's guide](https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/start/training-guide)
+    - [Tf.keras documentation](https://www.tensorflow.org/api_docs/python/tf/keras)
     - Course: Natural Language Processing on Google Cloud
 - ML Workflow
 - Data Preparation
@@ -58,11 +58,11 @@ This course introduces Google Cloud's AI and machine learning (ML) capabilities,
 - [Lab] Agent Platform - Predicting Loan Risk with AutoML
 - How machine learns
 - [Reading](https://partner.skills.google/paths/84/course_templates/593/documents/636935) AI development workflow
-    - MLOps: overview
-    - Introduction to Vertex AI Pipelines
-    - Introduction to Vertex Pipelines lab
-    - Introduction to Vertex AI SDK
-    - Explainable AI
+    - [MLOps: overview](https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
+    - [Introduction to Vertex AI Pipelines](https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/pipelines/introduction)
+    - [Introduction to Vertex Pipelines lab](https://codelabs.developers.google.com/vertex-pipelines-intro#0)
+    - [Introduction to Vertex AI SDK](https://www.youtube.com/watch?v=VaaUnIFCNX4)
+    - [Explainable AI](https://docs.cloud.google.com/vertex-ai/docs/explainable-ai/overview)
     - Course: Introduction to Vertex Forecasting and Time Series in Practice
 
 ## Prepare Data for ML APIs on Google Cloud
@@ -125,7 +125,7 @@ Use Agent Platform to train and serve TensorFlow model using code in a custom co
 
 
 
-- Designing high performance ML systems
+### Designing high performance ML systems
 Distributed training architectures, faster input pipelines, inference, TF distributed training strategies: Mirrorred/Multi-worker mirrorred/TPU/Parameter server, training on large datasets with tf.data API
 - [Lab] Distributed Training with Keras
 tf.distribute.Strategy API provides an abstraction for distributing training across multiple processing units. uses the tf.distribute.MirroredStrategy, which does in-graph replication with synchronous training on many GPUs on one machine. Essentially, it copies all of the model's variables to each processor. Then, it uses all-reduce to combine the gradients from all processors and applies the combined value to all copies of the model. - Define a distribution strategy and set an input pipeline, Create the Keras model, Define the callbacks, Train and evaluate the model.
@@ -137,7 +137,7 @@ tf.distribute.Strategy API provides an abstraction for distributing training acr
     - [ML Performance Improvement Cheat Sheet](https://machinelearningmastery.com/machine-learning-performance-improvement-cheat-sheet/)
     - [Distributed training with TensorFlow](https://www.tensorflow.org/guide/distributed_training)
 
-- Designing Adaptable ML Systems
+### Designing Adaptable ML Systems
 Adapting to data, changing distributions, Right and Wrong decisions, system failure, concept drift and actions to mitigate, TF data validation- Components: The Statistics Generation component, the Schema Generation component, and the Example Validator component, Advanced visualization with TF data validation, mitigating training-serving skew through design, diagnosing a production model
 - [Lab] Agent Platform: Training and Serving a Custom Model
 Use Agent Platform to train and serve a TensorFlow model using code in a custom container. Build and containerize model training code in Vertex Notebooks, Submit a custom model training job to Agent Platform, Deploy your trained model to an endpoint, and use that endpoint to get predictions.
@@ -151,7 +151,7 @@ Use Agent Platform to train and serve a TensorFlow model using code in a custom 
     - [Productionizing Behavioural Features for Machine Learning with Apache Spark Streaming](https://www.youtube.com/watch?v=cpR6Vkp7ImA)
     - [TensorFlow Data Validation: Checking and analyzing your data](https://www.tensorflow.org/tfx/guide/tfdv)
 
-- Designing Hybrid ML Systems
+### Designing Hybrid ML Systems
 hybrid cloud machine learning models, Kubeflow, optimize TensorFlow graphs for mobile, TFLight, composability, portability, scalability, 
 - [Readings] Hybrid ML Systems
     - [Kubeflow](https://www.kubeflow.org/)
