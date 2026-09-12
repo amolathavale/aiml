@@ -159,3 +159,8 @@ curl -s -H 'Content-Type: application/json' \
     'https://videointelligence.googleapis.com/v1/projects/PROJECTS/locations/LOCATIONS/operations/OPERATION_NAME'
 ```
 
+### Github repo with all GCP PDE/PMLE labs
+```zsh
+git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+git clone https://github.com/GoogleCloudPlatform/asl-ml-immersion.git 
+```
